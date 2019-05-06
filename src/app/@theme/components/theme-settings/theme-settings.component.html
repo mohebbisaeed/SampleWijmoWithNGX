@@ -1,0 +1,24 @@
+<div class="card-title">
+<div class="settings-row" *ngFor="let webModule of webModules" >
+  <a  href="{{webModule.WebUrl}}" target="_blank" >
+    <i class="fa fa-bookmark"></i>
+    {{webModule.Title}}
+    <!--<i [attr.class]="layout.icon"></i>-->
+  </a>
+</div>
+</div>
+<!--<h6>SIDEBAR</h6>-->
+<!--<div class="settings-row">-->
+  <!--<a *ngFor="let sidebar of sidebars"-->
+     <!--href="#"-->
+     <!--[class.selected]="sidebar.selected"-->
+     <!--[attr.title]="sidebar.name"-->
+     <!--(click)="sidebarSelect(sidebar)">-->
+    <!--<i [attr.class]="sidebar.icon"></i>-->
+  <!--</a>-->
+<!--</div>-->
+<!--<div class="settings-row">-->
+  <!--<div class="switcher">-->
+    <!--<ngx-layout-direction-switcher></ngx-layout-direction-switcher>-->
+  <!--</div>-->
+<!--</div>-->

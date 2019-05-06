@@ -1,0 +1,97 @@
+<!--<i class="fa fa-car"></i>-->
+<!--<i class="fa fa-car" style="font-size:48px;"></i>-->
+<!--<i class="fa fa-car" style="font-size:60px;color:red;"></i>-->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link" (click)="addHandler()"> ایجاد
+        <i class="fas fa-plus-circle"></i>
+      </a>
+    </li>
+    <li class="nav-item">
+      <i class="fa fa-pencil" aria-hidden="true"></i>
+      <a class="nav-link" (click)="editHandler()"> ویرایش
+        <i class="fa fa-edit"></i>
+      </a>
+    </li>
+    <li class="nav-item" style="color: #BD362F;">
+      <a class="nav-link" (click)="deleteHandler()"> حذف
+        <i class="fas fa-trash"></i>
+      </a>
+    </li>
+
+  </ul>
+  <ul class="nav justify-content-start">
+    <li class="nav-item">
+      <wj-combo-box style="width: 80px; background-color: #2b2d34; color: #5dcfe3; "
+                    [itemsSource]="[6, 8, 10, 12, 20, 25, 50, 1000]"
+                    [(selectedValue)]="view.pageSize">
+      </wj-combo-box>
+    </li>
+  </ul>
+
+  <div class="form-inline" style="margin-right: auto!important;">
+    <input class="form-control-search"  #userSearch type="Search" placeholder="جستجو نام کاربری، نام، نام خانوادگی" [(ngModel)]="userFilter">
+  </div>
+
+  <div class="form-inline" style="margin-right: auto!important;">
+    <input #roleSearch type="text" class="form-control-search" placeholder="جستجوی گروه های دسترسی" [(ngModel)]="roleFilter"/>
+  </div>
+</nav>
+<nb-layout-column>
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-sm-8">
+    <wj-flex-grid
+      [itemsSource]="view"
+      [isReadOnly]="true"
+      [allowAddNew]="false"
+      [allowDelete]="false"
+      (selectionChanged)="selectionChanged($event)">
+      <wj-flex-grid-column [width]="200" [header]="'نام کاربری'" [binding]="'UserName'"></wj-flex-grid-column>
+      <wj-flex-grid-column [width]="250" [header]="'نام'" [binding]="'FirstName'"></wj-flex-grid-column>
+      <wj-flex-grid-column [width]="250" [header]="'نام خانوادگی'" [binding]="'LastName'"></wj-flex-grid-column>
+      <wj-flex-grid-column [width]="75" [header]="'فعال'" [binding]="'IsActive'"></wj-flex-grid-column>
+      <!--<wj-flex-grid-column [binding]="'IsSale'" header="فروش" is-read-only="true" align="center" >-->
+      <!--<ng-template>-->
+      <!--<roleSearch type="checkbox" />-->
+      <!--</ng-template>-->
+      <!--&lt;!&ndash;<wj-flex-grid-cell-template cell-type="Cell">&ndash;&gt;-->
+      <!--&lt;!&ndash;&ndash;&gt;-->
+      <!--&lt;!&ndash;</wj-flex-grid-cell-template>&ndash;&gt;-->
+      <!--</wj-flex-grid-column>-->
+
+      <!--<wj-flex-grid-filter (filterApplied) = "filterChange($event)" ></wj-flex-grid-filter>-->
+    </wj-flex-grid>
+
+    <div class="row">
+      <div class="col-md-6">
+        <wj-collection-view-pager style="direction: ltr;" [cv]="view"></wj-collection-view-pager>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-4 col-sm-4">
+
+
+    <wj-flex-grid
+      #grdRole
+      [itemsSource]="roles"
+      [isReadOnly]="false"
+      [allowAddNew]="false"
+      [allowDelete]="false"
+      (cellEditEnded)="gridClickHandler(grdRole)">
+      <wj-flex-grid-column [width]="100" [header]="'انتخاب'" [binding]="'IsSelected'"></wj-flex-grid-column>
+      <wj-flex-grid-column [width]="'*'" [header]="'گروه دسترسی'" [binding]="'Title'"
+                           [isReadOnly]="true"></wj-flex-grid-column>
+    </wj-flex-grid>
+
+    <div class="row">
+      <div class="col-md-6">
+        <wj-collection-view-pager style="direction: ltr;" [cv]="roles"></wj-collection-view-pager>
+      </div>
+    </div>
+
+  </div>
+</div>
+</nb-layout-column>
+

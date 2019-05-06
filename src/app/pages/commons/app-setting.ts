@@ -1,0 +1,11 @@
+export const AppSetting_ASC = 'ASC';
+export const AppSetting_DESC = 'DESC';
+export const AppSetting_PleaseSelect = '--انتخاب کنید--';
+export const AppSetting_Message_Add_Success = 'آیتم جدید با موفقیت ایجاد شد';
+export const AppSetting_Message_Add_Fail = 'اشکال در ایجاد آیتم مورد نظر';
+export const AppSetting_Message_Edit_Success = 'آیتم انتخابی با موفقیت ویرایش شد';
+export const AppSetting_Message_Edit_Fail = 'اشکال در ویرایش آیتم انتخابی';
+export const AppSetting_Message_Delete_Success = 'آیتم انتخابی با موفقیت حذف شد';
+export const AppSetting_Message_Delete_Fail = 'آیتم انتخابی قابل حذف شدن نمی باشد';
+export const AppSetting_Message_Header_Success = 'موفقیت' ;
+export const AppSetting_Message_Header_Fail = 'خطا' ;

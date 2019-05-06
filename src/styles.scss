@@ -1,0 +1,273 @@
+//@import "node_modules/wijmo/styles/wijmo.scss";
+
+.saipa-user-profile {
+  margin-top: -12px;
+  margin-left: 30px;
+}
+
+
+.saipa-font{
+  font-family: IranLight !important;
+}
+.saipa-standard-fontsize{
+  font-size: 12px !important;
+  font-style: normal !important;
+}
+.saipa-title-fontsize{
+  font-size: 13px !important;
+  font-weight: bold;
+}
+.saipa-icon-fontsize{
+  font-size: 20px !important;
+}
+/*font*/
+/*text*/
+.saipa-rtl {
+  direction: rtl;
+}
+.saipa-dir-right {
+  direction: rtl;
+}
+.saipa-left-text {
+  text-align: left;
+}
+.saipa-text-left{
+  direction: ltr;
+  text-align: left;
+}
+.saipa-text-right{
+  direction: rtl;
+  text-align: right;
+}
+/*text*/
+body {
+  text-align: right;
+  overflow: hidden;
+  font-family: IranLight;
+}
+
+/*object*/
+.saipa-button {
+  border: none;
+  color: white;
+  padding:0.5rem 0.75rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+.saipa-button:hover{
+  opacity: 1;
+}
+.saipa-tag {
+  background: #4D4D4D;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0px 10px 0px 0px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+.saipa-tag::before {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  right: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+.saipa-tag::after {
+  background: #fff;
+  border-bottom: 13px solid transparent;
+  border-right: 10px solid #4D4D4D;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.saipa-tag:hover {
+  //background-color: white;
+  // color: white;
+}
+.saipa-tag:hover::after {
+  border-left-color: crimson;
+}
+a {
+  color: #0a0a0a;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer !important;
+  text-decoration: none !important;
+  color: #e18815 !important;
+}
+h1, h2, h3 {
+  font-family: IRANSans;
+}
+h5, h4, h6 {
+  font-family: IranLight;
+}
+/*object*/
+
+/*clear*/
+.saipa-no-border{
+  border: none !important;
+}
+.saipa-no-padding {
+  padding: 0 !important;
+}
+.saipa-no-pm{
+  padding: 0px !important;
+  margin: 0px!important;
+}
+.saipa-no-border{
+  border: none !important;
+}
+.saipa-no-radius{
+  border-radius: 0px !important;
+}
+.saipa-box-shadow{
+  box-shadow: 5px 5px 15px grey !important;
+}
+/*clear*/
+
+/*color*/
+.bg-dark {
+  background-color: #4D4D4D  !important;
+}
+.bg-saipa {
+  background-color: #e18815  !important;
+}
+saipa-dark{
+  colremor: #1b1e21 !important;
+}
+.saipa-success {
+  background-color:#55d17c ;
+}
+.saipa-cancel {
+  background-color:#e1615d ;
+}
+.saipa-gray{
+  background-color: #a7a7a7;
+}
+.saipa-gray-light{
+  background-color: #e4e4e4;
+}
+/*color*/
+
+
+
+
+.nb-theme-corporate nb-layout .layout nb-layout-header nav{
+  background-image: linear-gradient(to right, #4D4D4D 30%, #6E6E6E 45%, #4D4D4D 70%) !important;
+}
+.nb-theme-corporate nb-sidebar{
+  background: #4D4D4D !important;
+}
+.nb-theme-corporate nb-sidebar .main-container{
+  background: #4D4D4D !important;
+
+}
+.nb-theme-corporate nb-sidebar .scrollable {
+  border-top: 8px solid #FE8A00;
+  padding: 0rem 0rem 0rem 1.2rem !important;
+}
+
+.layout-container {
+  padding-top: 3.5rem !important;
+}
+.nb-theme-corporate nb-layout .layout .layout-container nb-sidebar.fixed{
+  top : 3rem !important;
+}
+.nb-theme-corporate nb-layout .layout nb-layout-header nav{
+  height: 3.5rem !important;
+}
+.nb-theme-corporate nb-menu{
+  background-color: #4d4d4d !important;
+}
+.nb-theme-corporate nb-menu .menu-item a:hover, .nb-theme-corporate nb-menu .menu-item a.active{
+  background-color: #656565fc !important;
+  color: white;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items {
+  background-color: #4b4b4b !important;
+  border-top: 1px solid #cdd5dc;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items > .menu-item{
+  background-color: #4b4b4b !important;
+  padding: 0 1.25rem 0px 0px !important;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items > .menu-item a{
+  border: none !important;
+  color: #fff;
+}
+.menu-item a .menu-title{
+  color: #fff;
+}
+.nb-theme-corporate nb-menu{
+  font-weight: 100 !important;
+  font-size: 13px;
+}
+.nb-theme-corporate nb-menu .menu-item a:hover, .nb-theme-corporate nb-menu .menu-item a.active{
+  font-weight: 300 !important;
+  font-size: 13px;
+}
+.nb-theme-corporate nb-menu .menu-item a {
+  padding: 0.2rem 1rem !important;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items > .menu-item:first-child {
+  margin-top: 0 !important;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items > .menu-item:last-child{
+  margin-bottom: 0 !important;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items > .menu-item a.active {
+  padding: 10px !important;
+}
+.nb-theme-corporate nb-menu .menu-item > .menu-items > .menu-item a {
+  padding: 10px !important;
+}
+.nb-theme-corporate nb-layout .layout .layout-container .content .columns nb-layout-column {
+  padding: 1rem 1rem 0.75rem;
+}
+.nb-theme-corporate nb-layout .layout nb-layout-header.fixed ~ .layout-container > nb-sidebar > .main-container{
+  height: 94vh !important;
+}
+.nb-theme-corporate nb-card.success-card nb-card-header {
+  background-color: #efefef !important;
+  border-bottom: 1px solid #cdd5dc !important;
+}
+.nb-theme-corporate nb-card.success-card nb-card-footer {
+  background-color: #efefef !important;
+  border-bottom: 1px solid #cdd5dc !important;
+}
+.nb-theme-corporate nb-card{
+  margin-bottom: 0px !important;
+}
+.nb-theme-corporate .btn-outline.btn-info {
+  border: 2px solid #dadfe6 !important;
+  color: #040404  !important;
+  background-color: transparent !important;
+}
+
+.nb-theme-corporate nb-card.select.info nb-option:hover {
+  background-color: #c0c1c3 !important;
+}
+.nb-theme-corporate nb-card.select.info {
+  border: 2px solid #dadfe6 !important;
+}

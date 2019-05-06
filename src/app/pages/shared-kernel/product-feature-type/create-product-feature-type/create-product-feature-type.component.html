@@ -1,0 +1,21 @@
+<!--<toaster-container [toasterconfig]="config"></toaster-container>-->
+<form  [formGroup]="formGroup" (ngSubmit)="save()">
+  <nb-card status="success" >
+    <nb-card-header>
+      <span>کاربر</span>
+    </nb-card-header>
+    <nb-card-body>
+      <div class="form-group row">
+        <label for="Name" class="col-2 col-form-label">نام</label>
+        <div class="col-10">
+          <input type="text" placeholder="نام" id="Name" formControlName="Name"
+                 class="form-control"/>
+        </div>
+      </div>
+    </nb-card-body>
+    <nb-card-footer>
+      <button type="submit" class="saipa-button saipa-success w-25">تایید</button>
+      <button class="saipa-button saipa-cancel w-25 float-left" (click)="closeModal()">بازگشت</button>
+    </nb-card-footer>
+  </nb-card>
+</form>

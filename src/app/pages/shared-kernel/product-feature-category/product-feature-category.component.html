@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <ul class="nav justify-content-end">
+    <li class="nav-item text-white" >
+      <a class="nav-link" (click)="addHandler()" > ایجاد
+        <i class="fas fa-plus-circle"></i>
+      </a>
+    </li>
+    <li class="nav-item text-white" >
+      <a class="nav-link" (click)="editHandler()" > ویرایش
+        <i class="fa fa-edit"></i>
+      </a>
+    </li>
+    <li class="nav-item text-white" >
+      <a class="nav-link" (click)="deleteHandler()"> حذف
+        <i class="fas fa-trash"></i>
+      </a>
+    </li>
+
+  </ul>
+  <ul class="nav justify-content-start">
+    <li class="nav-item">
+      <!--<wj-combo-box style="width: 80px; background-color: #2b2d34; color: #5dcfe3; "-->
+                    <!--[itemsSource]="[6, 8, 10, 12, 20, 25, 50, 1000]"-->
+                    <!--[(selectedValue)]="view.pageSize">-->
+      <!--</wj-combo-box>-->
+    </li>
+  </ul>
+
+  <!--<div class="form-inline" style="margin-right: auto!important;">-->
+    <!--<input class="form-control-search"  #userSearch type="Search" placeholder="جستجو نام کاربری، نام، نام خانوادگی" [(ngModel)]="userFilter">-->
+  <!--</div>-->
+
+  <!--<div class="form-inline" style="margin-right: auto!important;">-->
+    <!--<input #roleSearch type="text" class="form-control-search" placeholder="جستجوی گروه های دسترسی" [(ngModel)]="roleFilter"/>-->
+  <!--</div>-->
+</nav>

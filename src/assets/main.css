@@ -1,0 +1,81 @@
+/*@import "D:\Mohebbi.TeamFundaion\ISEIKCO.GIT\Coding\ISEIKCO.Coding.Web\ngx\node_modules\wijmo\styles\wijmo.scss";*/
+
+.cdk-overlay-container {
+  position: inherit !important;
+}
+.cdk-overlay-connected-position-bounding-box
+{
+  position: inherit !important;
+}
+.cdk-overlay-pane {
+  z-index: 99999!important;
+}
+
+nb-card {
+  transform: translate3d(0, 0, 0);
+}
+
+
+.iseiko-nav{
+  font-size: 16px;
+  color: white;
+}
+
+.iseiko-nav:hover
+{
+  cursor: pointer;
+}
+
+
+.my-container {
+  display: block;
+    height: 80vh;
+}
+
+.modal-footer > :not(:last-child) {
+  margin-left: .25rem;
+}
+
+
+.form-control {
+  line-height: 1.2 !important;
+}
+
+.col-form-label {
+  line-height: 1.2 !important;
+}
+.nb-theme-corporate .btn
+{
+  margin-right: 5px;
+  margin-left:  5px;
+}
+
+
+.ng-valid[required], .ng-valid.required  {
+  border-right: 5px solid #42A948 !important; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-right: 5px solid #a94442 !important;; /* red */
+}
+
+.settings-row i{
+  color: #f3040d !important;
+}
+.settings-row a{
+  color: #282929 !important;
+}
+
+.settings-row {
+  color: #282929 !important;
+}
+
+
+.form-control-search {
+  padding: 0.4rem 0.625rem !important;
+  color: #181818;
+  background-color: #ffffff;
+  border: 1px solid #dadfe6 !important;
+  font-family: IRANSans;
+  border-radius: 0.17rem;
+}
